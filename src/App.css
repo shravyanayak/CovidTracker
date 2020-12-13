@@ -1,0 +1,459 @@
+.dark-mode {
+  background: #161625 !important;
+  color: #bdbdbd;
+  font-family: inherit;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Navbar {
+  border-right: 0;
+  background: #1e1e30 !important;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  min-width: 5rem;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  display: flex;
+  font-family: "archia";
+  color: #bdbdbd;
+}
+
+.Navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar-left {
+  margin-bottom: 0.5rem;
+  margin-top: auto;
+  order: 3;
+  text-align: center;
+  color: rgba(108, 117, 125, 0.6);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 1.5rem;
+  width: 3rem;
+  font-family: "archia";
+}
+
+.navbar-middle {
+  font-size: 0.6rem;
+  order: 1;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  width: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  max-height: 0em;
+}
+
+.Navbar .navbar-middle span {
+  color: #4c75f2;
+}
+
+.Navbar .navbar-right a {
+  max-height: 5em;
+}
+
+@media (min-width: 769px) {
+  .Navbar .navbar-right {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.Navbar .navbar-right {
+  color: #6c757d;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 1.5rem;
+  text-align: center;
+  width: 3rem;
+}
+
+@media (min-width: 769px) {
+  .Navbar .navbar-right span {
+    display: flex;
+    flex-direction: row;
+    height: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.Home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 8rem;
+  margin-right: 2rem;
+  color: #bdbdbd;
+  padding-top: 5rem;
+}
+
+.left-panel {
+  margin-right: 2.5rem;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.Search-time-panel {
+  text-align: center;
+}
+
+.Search-item-style {
+  margin-bottom: 1rem;
+  font-size: smaller;
+  color: #6c757d;
+}
+.Search-input-style {
+  margin-bottom: 1rem;
+  font-size: smaller;
+  min-width: 31rem;
+  min-height: 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  background: #1e1e30 !important;
+}
+
+.time {
+  font-size: x-small;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  margin-left: 49px;
+  font-weight: 700;
+}
+
+.right-panel {
+  display: flex;
+  width: 30rem;
+
+  margin-left: 2.5rem;
+  min-height: 60rem;
+  flex-direction: column;
+}
+
+.Status {
+  display: flex;
+  min-width: 31rem;
+  margin-bottom: 2rem;
+}
+
+.Confirmed {
+  opacity: 1;
+  transform: translateX(0px);
+  padding: 1rem;
+  text-align: center;
+  color: #e23028;
+  border-radius: 0.3rem;
+  cursor: pointer;
+
+  padding-top: 29px;
+}
+
+.Confirmed:hover {
+  background: rgba(255, 7, 58, 0.125);
+}
+
+.status-style {
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.day-count {
+  font-size: smaller;
+  margin-bottom: 1rem;
+  color: rgba(255, 7, 58, 0.6);
+}
+
+.total-count {
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+
+.count-graph {
+  color: rgba(255, 7, 58, 0.6);
+  min-height: 3rem;
+}
+
+.Active {
+  opacity: 1;
+  transform: translateX(0px);
+  padding: 1rem;
+  text-align: center;
+  color: #007bff;
+  border-radius: 0.3rem;
+  cursor: pointer;
+
+  padding-top: 29px;
+}
+
+.Active:hover {
+  background: rgba(0, 123, 255, 0.0627451);
+}
+
+.Active .day-count {
+  font-size: smaller;
+  margin-bottom: 1rem;
+  color: #161625 !important;
+}
+
+.count-graph-active {
+  min-height: 3rem;
+  color: #0d4a8b;
+}
+
+.Recovered {
+  opacity: 1;
+  transform: translateX(0px);
+  padding: 1rem;
+  text-align: center;
+  color: #28a745;
+  border-radius: 0.3rem;
+  cursor: pointer;
+
+  padding-top: 29px;
+}
+
+.Recovered:hover {
+  background: rgba(40, 167, 69, 0.12549);
+}
+
+.Recovered .day-count {
+  font-size: smaller;
+  margin-bottom: 1rem;
+  color: rgba(40, 167, 69, 0.6);
+}
+
+.count-graph-recovered {
+  min-height: 3rem;
+  color: rgba(40, 167, 69, 0.6);
+}
+
+.Deceased {
+  opacity: 1;
+  transform: translateX(0px);
+  padding: 1rem;
+  text-align: center;
+  color: #6c757d;
+  border-radius: 0.3rem;
+  cursor: pointer;
+
+  padding-top: 29px;
+}
+
+.Deceased:hover {
+  background: rgba(108, 117, 125, 0.0627451);
+}
+
+.Deceased .day-count {
+  font-size: smaller;
+  margin-bottom: 1rem;
+  color: rgba(108, 117, 125, 0.6);
+}
+
+.count-graph-deceased {
+  min-height: 3rem;
+  color: rgba(108, 117, 125, 0.6);
+}
+
+.grid-container {
+  grid-template-columns: auto auto auto auto auto;
+  display: grid;
+  grid-gap: 4px;
+}
+
+.each-coloumn-state {
+  background: #1e1e30 !important;
+  font-size: smaller;
+  text-align: center;
+  min-width: 7rem;
+  max-width: 7rem;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1.2rem 0.5rem 0.75rem;
+  border-radius: 0.2rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+}
+
+.each-coloumn-confirmed {
+  background: #1e1e30 !important;
+  font-size: smaller;
+  text-align: center;
+  /* min-width: 7rem; */
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1.2rem 0.5rem 0.75rem;
+  border-radius: 0.2rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+  max-width: 6rem;
+  min-width: 6rem;
+}
+
+.each-coloumn {
+  background: #1e1e30 !important;
+  font-size: smaller;
+  text-align: center;
+  /* min-width: 7rem; */
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1.2rem 0.5rem 0.75rem;
+  border-radius: 0.2rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+}
+
+.each-coloumn-active {
+  background: #1e1e30 !important;
+  font-size: smaller;
+  text-align: center;
+  /* min-width: 7rem; */
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1.2rem 0.5rem 0.75rem;
+  border-radius: 0.2rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+  min-width: 2.5rem;
+  max-width: 2.5rem;
+}
+.each-coloumn-deceased {
+  background: #1e1e30 !important;
+  font-size: smaller;
+  text-align: center;
+  /* min-width: 7rem; */
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1.2rem 0.5rem 0.75rem;
+  border-radius: 0.2rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+  min-width: 4.5rem;
+  max-width: 4.5rem;
+}
+.each-coloumn-tested {
+  background: #1e1e30 !important;
+  font-size: smaller;
+  text-align: center;
+  /* min-width: 7rem; */
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1.2rem 0.5rem 0.75rem;
+  border-radius: 0.2rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+}
+.each-coloumn-recoverd {
+  background: #1e1e30 !important;
+  font-size: smaller;
+  text-align: center;
+  /* min-width: 7rem; */
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1.2rem 0.5rem 0.75rem;
+  border-radius: 0.2rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+  min-width: 4.5rem;
+  max-width: 4.5rem;
+}
+
+.table {
+  min-width: 31rem;
+}
+
+.Country-header {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  height: 5.25rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+.country-header-div {
+  display: flex;
+}
+.header-left {
+  float: left;
+  min-width: 24.5rem;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  float: right;
+  color: rgba(150, 115, 185, 0.733333);
+}
+
+.country-name-style {
+  color: #e23028;
+  max-width: 4.2rem;
+  background: rgba(226, 48, 40, 0.0627451);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 29px;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  margin-bottom: 19px;
+}
+.covid19-name-style {
+  max-width: 8.2rem;
+  background: rgba(0, 123, 255, 0.0627451);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 29px;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  color: #0d4a8b;
+  margin-bottom: 21px;
+  margin-left: 197px;
+}
+
+.time-updated {
+  font-size: x-small;
+  color: #6c757d;
+  font-weight: 700;
+}
+
+.font-small {
+  font-size: small;
+}
+
+.weight-font {
+  font-weight: 800;
+}
+
+.Map {
+  min-height: 10px;
+}
+
+.map-size {
+  max-height: 570px;
+}
